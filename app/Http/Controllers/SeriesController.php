@@ -6,8 +6,8 @@ use Illuminate\Http\Request;
 
 class SeriesController extends Controller
 {
-    public function listarSeries()
+    public function index()
     {
-        echo 'Series';
+        echo 'Minha rota';
     }
 }
