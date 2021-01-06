@@ -8,6 +8,7 @@ class SeriesController extends Controller
 {
     public function index()
     {
-        echo 'Minha rota';
+        $series = ['Arrow', 'Flash'];
+        return view('series.index', ['series' => $series]);
     }
 }
