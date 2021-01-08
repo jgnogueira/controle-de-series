@@ -9,7 +9,7 @@ class SeriesController extends Controller
 {
     public function index()
     {
-        $series = ['Arrow', 'Flash'];
+        $series = Serie::all();
         return view('series.index', ['series' => $series]);
     }
 
@@ -24,5 +24,7 @@ class SeriesController extends Controller
         $serie = new Serie();
         $serie->nome = $nome;
         $serie->save();
+
+        return redirect('/series');
     }
 }
