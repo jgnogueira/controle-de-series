@@ -16,6 +16,9 @@ Séries
 <ul class="list-group">
     @foreach ($series as $serie)
     <li class="list-group-item">{{$serie->nome}}</li>
+    <form method="post" action="/series/remover">
+        <button class="btn btn-danger">Excluir</button>
+    </form>
     @endforeach
 </ul>
 
